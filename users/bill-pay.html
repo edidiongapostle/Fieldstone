@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="#0A2540">
+<title>Bill Pay | Fieldstone National Bank</title>
+<meta name="description" content="Pay bills online with Fieldstone National Bank Bill Pay. Schedule one-time or recurring payments to anyone in the US.">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="demo-bar">
+  <strong>Demo site</strong> — for portfolio/demonstration purposes only. This is a simulated banking bill pay page.
+</div>
+
+<header class="dashboard-header">
+  <div class="container">
+    <div class="dashboard-nav">
+      <a href="dashboard.html" class="dashboard-brand">
+        <svg class="brand-mark" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M16 2L2 10V13H30V10L16 2Z" fill="#0A2540"/>
+          <rect x="4" y="14" width="3.4" height="13" fill="#0A2540"/>
+          <rect x="10.3" y="14" width="3.4" height="13" fill="#C41230"/>
+          <rect x="16.6" y="14" width="3.4" height="13" fill="#0A2540"/>
+          <rect x="22.9" y="14" width="3.4" height="13" fill="#C41230"/>
+          <rect x="2" y="28" width="28" height="2.4" fill="#0A2540"/>
+        </svg>
+        <span>Fieldstone Online</span>
+      </a>
+
+      <nav class="dashboard-nav-links" aria-label="Dashboard navigation">
+        <a href="dashboard.html" class="dashboard-nav-link">Accounts</a>
+        <a href="transfers.html" class="dashboard-nav-link">Transfers</a>
+        <a href="bill-pay.html" class="dashboard-nav-link active">Bill Pay</a>
+        <a href="deposits.html" class="dashboard-nav-link">Deposits</a>
+      </nav>
+
+      <div class="dashboard-user-menu">
+        <button class="user-menu-toggle" aria-label="User menu" aria-expanded="false">
+          <div class="user-avatar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <span class="user-name">Jordan</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="user-dropdown">
+          <div class="user-dropdown-header">
+            <div class="dropdown-avatar">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="dropdown-user-info">
+              <p class="dropdown-user-name">Jordan Smith</p>
+              <p class="dropdown-user-email">jordan.smith@email.com</p>
+            </div>
+          </div>
+          <div class="user-dropdown-links">
+            <a href="settings.html" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06.06-.06z"/></svg>
+              Settings
+            </a>
+            <a href="#" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Security
+            </a>
+            <a href="#" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Messages
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              Help & Support
+            </a>
+            <a href="../index.html" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              Return to Home
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="../login.html" class="dropdown-link sign-out">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+              Sign Out
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Bill Pay Header -->
+<div class="bill-pay-header">
+  <div class="container">
+    <h1>Bill Pay</h1>
+    <p class="bill-pay-subtitle">Pay bills online — schedule one-time or recurring payments to anyone in the US</p>
+  </div>
+</div>
+
+<!-- Bill Pay Tabs -->
+<div class="bill-pay-tabs-container">
+  <div class="container">
+    <div class="bill-pay-tabs" role="tablist">
+      <button class="bill-pay-tab active" data-tab="pay-bills" role="tab" aria-selected="true">
+        Pay Bills
+      </button>
+      <button class="bill-pay-tab" data-tab="payees" role="tab" aria-selected="false">
+        Manage Payees
+      </button>
+      <button class="bill-pay-tab" data-tab="scheduled" role="tab" aria-selected="false">
+        Scheduled Payments
+      </button>
+      <button class="bill-pay-tab" data-tab="history" role="tab" aria-selected="false">
+        Payment History
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Bill Pay Content -->
+<main class="bill-pay-main">
+  <div class="container">
+    <div class="bill-pay-content-grid">
+      
+      <!-- Bill Pay Form Section -->
+      <div class="bill-pay-form-section">
+        
+        <!-- Pay Bills Tab -->
+        <div class="bill-pay-tab-content active" id="pay-bills">
+          <div class="bill-pay-form-card">
+            <h2>Pay a Bill</h2>
+            <p class="form-description">Select a payee and schedule your payment.</p>
+            
+            <form data-demo-form data-success-message="Payment scheduled successfully! This is a demo — no actual payment was processed." novalidate>
+              <div class="form-feedback" role="status"></div>
+
+              <div class="payee-selector">
+                <label class="field-label">Select Payee</label>
+                <div class="payee-search">
+                  <input type="text" id="payeeSearch" placeholder="Search payees..." class="search-input">
+                </div>
+                <div class="payee-list">
+                  <label class="payee-option">
+                    <input type="radio" name="payee" value="electric" checked>
+                    <div class="payee-card">
+                      <div class="payee-icon electric">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                      </div>
+                      <div class="payee-details">
+                        <p class="payee-name">City Electric Company</p>
+                        <p class="payee-account">Account: •••• 7890</p>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="payee-option">
+                    <input type="radio" name="payee" value="gas">
+                    <div class="payee-card">
+                      <div class="payee-icon gas">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2z"/><path d="M12 3v6"/><path d="M12 9l3-3"/><path d="M12 9l-3-3"/></svg>
+                      </div>
+                      <div class="payee-details">
+                        <p class="payee-name">Natural Gas Company</p>
+                        <p class="payee-account">Account: •••• 4567</p>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="payee-option">
+                    <input type="radio" name="payee" value="internet">
+                    <div class="payee-card">
+                      <div class="payee-icon internet">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                      </div>
+                      <div class="payee-details">
+                        <p class="payee-name">FastNet Internet</p>
+                        <p class="payee-account">Account: •••• 1234</p>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="payee-option">
+                    <input type="radio" name="payee" value="water">
+                    <div class="payee-card">
+                      <div class="payee-icon water">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                      </div>
+                      <div class="payee-details">
+                        <p class="payee-name">Municipal Water Dept</p>
+                        <p class="payee-account">Account: •••• 8901</p>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="payee-option">
+                    <input type="radio" name="payee" value="insurance">
+                    <div class="payee-card">
+                      <div class="payee-icon insurance">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                      </div>
+                      <div class="payee-details">
+                        <p class="payee-name">State Farm Insurance</p>
+                        <p class="payee-account">Policy: •••• 3456</p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <button type="button" class="btn-text add-payee-btn">+ Add new payee</button>
+              </div>
+
+              <div class="payment-amount-section">
+                <label class="field-label">Payment Amount</label>
+                <div class="amount-input-wrapper">
+                  <span class="currency-symbol">$</span>
+                  <input type="text" id="paymentAmount" name="amount" class="amount-input" placeholder="0.00" inputmode="decimal" required>
+                </div>
+                <div class="bill-amount-info">
+                  <span class="bill-label">Latest bill amount:</span>
+                  <span class="bill-amount">$127.45</span>
+                  <button type="button" class="btn-text use-bill-amount">Use this amount</button>
+                </div>
+              </div>
+
+              <div class="payment-account-selector">
+                <label class="field-label">Pay From</label>
+                <div class="account-select">
+                  <select id="paymentFromAccount" name="fromAccount" required>
+                    <option value="">Select account</option>
+                    <option value="checking">Everyday Checking •••• 4821 - $4,286.10</option>
+                    <option value="savings">Premium Savings •••• 7734 - $12,847.32</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="payment-date-section">
+                <label class="field-label">Payment Date</label>
+                <div class="date-options">
+                  <label class="date-option">
+                    <input type="radio" name="paymentDate" value="today" checked>
+                    <span>Today (Jul 15, 2026)</span>
+                  </label>
+                  <label class="date-option">
+                    <input type="radio" name="paymentDate" value="due">
+                    <span>On due date (Jul 25, 2026)</span>
+                  </label>
+                  <label class="date-option">
+                    <input type="radio" name="paymentDate" value="custom">
+                    <span>Custom date</span>
+                  </label>
+                </div>
+                <input type="date" id="customPaymentDate" name="customDate" class="date-input" style="display: none;">
+              </div>
+
+              <div class="payment-frequency">
+                <label class="field-label">Payment Frequency</label>
+                <div class="frequency-options">
+                  <label class="frequency-option">
+                    <input type="radio" name="paymentFrequency" value="once" checked>
+                    <span>One-time payment</span>
+                  </label>
+                  <label class="frequency-option">
+                    <input type="radio" name="paymentFrequency" value="weekly">
+                    <span>Weekly</span>
+                  </label>
+                  <label class="frequency-option">
+                    <input type="radio" name="paymentFrequency" value="biweekly">
+                    <span>Every 2 weeks</span>
+                  </label>
+                  <label class="frequency-option">
+                    <input type="radio" name="paymentFrequency" value="monthly">
+                    <span>Monthly</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="payment-memo">
+                <label class="field-label">Memo (Optional)</label>
+                <input type="text" id="paymentMemo" name="memo" placeholder="Add a note for your records" maxlength="140">
+              </div>
+
+              <div class="payment-summary" id="paymentSummary" style="display: none;">
+                <h3>Payment Summary</h3>
+                <div class="summary-row">
+                  <span>Payee:</span>
+                  <span id="summaryPayee">-</span>
+                </div>
+                <div class="summary-row">
+                  <span>Amount:</span>
+                  <span id="summaryPaymentAmount">-</span>
+                </div>
+                <div class="summary-row">
+                  <span>From:</span>
+                  <span id="summaryPaymentFrom">-</span>
+                </div>
+                <div class="summary-row">
+                  <span>Date:</span>
+                  <span id="summaryPaymentDate">-</span>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block payment-submit">Schedule Payment</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Manage Payees Tab -->
+        <div class="bill-pay-tab-content" id="payees">
+          <div class="bill-pay-form-card">
+            <h2>Manage Payees</h2>
+            <p class="form-description">Add, edit, or remove your bill payees.</p>
+            
+            <div class="payees-list-header">
+              <div class="payees-search">
+                <input type="text" placeholder="Search payees..." class="search-input">
+              </div>
+              <button class="btn btn-primary add-payee-header-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Add Payee
+              </button>
+            </div>
+
+            <div class="payees-manage-list">
+              <div class="payee-manage-item">
+                <div class="payee-manage-icon electric">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <div class="payee-manage-details">
+                  <p class="payee-manage-name">City Electric Company</p>
+                  <p class="payee-manage-account">Account: •••• 7890</p>
+                  <p class="payee-manage-address">123 Power Ave, Columbus, OH 43215</p>
+                </div>
+                <div class="payee-manage-actions">
+                  <button class="btn-text edit-btn">Edit</button>
+                  <button class="btn-text delete-btn">Delete</button>
+                </div>
+              </div>
+
+              <div class="payee-manage-item">
+                <div class="payee-manage-icon gas">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2z"/><path d="M12 3v6"/><path d="M12 9l3-3"/><path d="M12 9l-3-3"/></svg>
+                </div>
+                <div class="payee-manage-details">
+                  <p class="payee-manage-name">Natural Gas Company</p>
+                  <p class="payee-manage-account">Account: •••• 4567</p>
+                  <p class="payee-manage-address">456 Gas St, Columbus, OH 43216</p>
+                </div>
+                <div class="payee-manage-actions">
+                  <button class="btn-text edit-btn">Edit</button>
+                  <button class="btn-text delete-btn">Delete</button>
+                </div>
+              </div>
+
+              <div class="payee-manage-item">
+                <div class="payee-manage-icon internet">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <div class="payee-manage-details">
+                  <p class="payee-manage-name">FastNet Internet</p>
+                  <p class="payee-manage-account">Account: •••• 1234</p>
+                  <p class="payee-manage-address">789 Broadband Blvd, Columbus, OH 43217</p>
+                </div>
+                <div class="payee-manage-actions">
+                  <button class="btn-text edit-btn">Edit</button>
+                  <button class="btn-text delete-btn">Delete</button>
+                </div>
+              </div>
+
+              <div class="payee-manage-item">
+                <div class="payee-manage-icon water">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                </div>
+                <div class="payee-manage-details">
+                  <p class="payee-manage-name">Municipal Water Dept</p>
+                  <p class="payee-manage-account">Account: •••• 8901</p>
+                  <p class="payee-manage-address">321 Water Way, Columbus, OH 43218</p>
+                </div>
+                <div class="payee-manage-actions">
+                  <button class="btn-text edit-btn">Edit</button>
+                  <button class="btn-text delete-btn">Delete</button>
+                </div>
+              </div>
+
+              <div class="payee-manage-item">
+                <div class="payee-manage-icon insurance">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="payee-manage-details">
+                  <p class="payee-manage-name">State Farm Insurance</p>
+                  <p class="payee-manage-account">Policy: •••• 3456</p>
+                  <p class="payee-manage-address">555 Insurance Dr, Bloomington, IL 61701</p>
+                </div>
+                <div class="payee-manage-actions">
+                  <button class="btn-text edit-btn">Edit</button>
+                  <button class="btn-text delete-btn">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scheduled Payments Tab -->
+        <div class="bill-pay-tab-content" id="scheduled">
+          <div class="bill-pay-form-card">
+            <h2>Scheduled Payments</h2>
+            <p class="form-description">View and manage your upcoming scheduled payments.</p>
+            
+            <div class="scheduled-payments-list">
+              <div class="scheduled-payment-item">
+                <div class="scheduled-payment-icon electric">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <div class="scheduled-payment-details">
+                  <p class="scheduled-payment-name">City Electric Company</p>
+                  <p class="scheduled-payment-date">Scheduled: Jul 25, 2026</p>
+                  <p class="scheduled-payment-from">From: Everyday Checking •••• 4821</p>
+                </div>
+                <div class="scheduled-payment-amount">
+                  <p class="amount">$127.45</p>
+                  <span class="status pending">Pending</span>
+                </div>
+                <div class="scheduled-payment-actions">
+                  <button class="btn-text edit-btn">Edit</button>
+                  <button class="btn-text cancel-btn">Cancel</button>
+                </div>
+              </div>
+
+              <div class="scheduled-payment-item">
+                <div class="scheduled-payment-icon gas">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2z"/><path d="M12 3v6"/><path d="M12 9l3-3"/><path d="M12 9l-3-3"/></svg>
+                </div>
+                <div class="scheduled-payment-details">
+                  <p class="scheduled-payment-name">Natural Gas Company</p>
+                  <p class="scheduled-payment-date">Scheduled: Aug 1, 2026</p>
+                  <p class="scheduled-payment-from">From: Everyday Checking •••• 4821</p>
+                </div>
+                <div class="scheduled-payment-amount">
+                  <p class="amount">$68.32</p>
+                  <span class="status pending">Pending</span>
+                </div>
+                <div class="scheduled-payment-actions">
+                  <button class="btn-text edit-btn">Edit</button>
+                  <button class="btn-text cancel-btn">Cancel</button>
+                </div>
+              </div>
+
+              <div class="scheduled-payment-item recurring">
+                <div class="scheduled-payment-icon internet">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <div class="scheduled-payment-details">
+                  <p class="scheduled-payment-name">FastNet Internet</p>
+                  <p class="scheduled-payment-date">Monthly: 15th of each month</p>
+                  <p class="scheduled-payment-from">From: Everyday Checking •••• 4821</p>
+                </div>
+                <div class="scheduled-payment-amount">
+                  <p class="amount">$59.99</p>
+                  <span class="status recurring">Recurring</span>
+                </div>
+                <div class="scheduled-payment-actions">
+                  <button class="btn-text edit-btn">Edit</button>
+                  <button class="btn-text cancel-btn">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment History Tab -->
+        <div class="bill-pay-tab-content" id="history">
+          <div class="bill-pay-form-card">
+            <h2>Payment History</h2>
+            <p class="form-description">View your past bill payments.</p>
+            
+            <div class="history-filters">
+              <div class="filter-group">
+                <label class="field-label">Date Range</label>
+                <select class="filter-select">
+                  <option>Last 30 days</option>
+                  <option>Last 60 days</option>
+                  <option>Last 90 days</option>
+                  <option>Last 6 months</option>
+                  <option>Last year</option>
+                  <option>Custom range</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label class="field-label">Payee</label>
+                <select class="filter-select">
+                  <option>All payees</option>
+                  <option>City Electric Company</option>
+                  <option>Natural Gas Company</option>
+                  <option>FastNet Internet</option>
+                  <option>Municipal Water Dept</option>
+                  <option>State Farm Insurance</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="payment-history-list">
+              <div class="payment-history-item">
+                <div class="history-icon electric">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <div class="history-details">
+                  <p class="history-name">City Electric Company</p>
+                  <p class="history-date">Jul 10, 2026</p>
+                </div>
+                <div class="history-amount">
+                  <p class="amount">$127.45</p>
+                  <span class="status completed">Completed</span>
+                </div>
+              </div>
+
+              <div class="payment-history-item">
+                <div class="history-icon gas">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2z"/><path d="M12 3v6"/><path d="M12 9l3-3"/><path d="M12 9l-3-3"/></svg>
+                </div>
+                <div class="history-details">
+                  <p class="history-name">Natural Gas Company</p>
+                  <p class="history-date">Jul 1, 2026</p>
+                </div>
+                <div class="history-amount">
+                  <p class="amount">$68.32</p>
+                  <span class="status completed">Completed</span>
+                </div>
+              </div>
+
+              <div class="payment-history-item">
+                <div class="history-icon internet">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <div class="history-details">
+                  <p class="history-name">FastNet Internet</p>
+                  <p class="history-date">Jun 15, 2026</p>
+                </div>
+                <div class="history-amount">
+                  <p class="amount">$59.99</p>
+                  <span class="status completed">Completed</span>
+                </div>
+              </div>
+
+              <div class="payment-history-item">
+                <div class="history-icon water">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                </div>
+                <div class="history-details">
+                  <p class="history-name">Municipal Water Dept</p>
+                  <p class="history-date">Jun 8, 2026</p>
+                </div>
+                <div class="history-amount">
+                  <p class="amount">$45.67</p>
+                  <span class="status completed">Completed</span>
+                </div>
+              </div>
+
+              <div class="payment-history-item">
+                <div class="history-icon insurance">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="history-details">
+                  <p class="history-name">State Farm Insurance</p>
+                  <p class="history-date">Jun 1, 2026</p>
+                </div>
+                <div class="history-amount">
+                  <p class="amount">$185.00</p>
+                  <span class="status completed">Completed</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="history-pagination">
+              <button class="btn-text" disabled>Previous</button>
+              <span class="page-info">Page 1 of 3</span>
+              <button class="btn-text">Next</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sidebar -->
+      <div class="bill-pay-sidebar">
+        
+        <!-- Quick Balance -->
+        <div class="sidebar-card">
+          <h3>Available Balance</h3>
+          <div class="quick-balance-display">
+            <p class="balance-label">Everyday Checking</p>
+            <p class="balance-amount-large">$4,286.10</p>
+            <p class="balance-sub">Available for bill pay</p>
+          </div>
+        </div>
+
+        <!-- Upcoming Bills -->
+        <div class="sidebar-card">
+          <div class="sidebar-card-header">
+            <h3>Upcoming Bills</h3>
+            <a href="#" class="view-all">View All</a>
+          </div>
+          <div class="upcoming-bills-list">
+            <div class="upcoming-bill-item">
+              <div class="upcoming-bill-icon electric">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <div class="upcoming-bill-details">
+                <p class="upcoming-bill-name">City Electric</p>
+                <p class="upcoming-bill-due">Due: Jul 25</p>
+              </div>
+              <p class="upcoming-bill-amount">$127.45</p>
+            </div>
+            <div class="upcoming-bill-item">
+              <div class="upcoming-bill-icon gas">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2z"/><path d="M12 3v6"/><path d="M12 9l3-3"/><path d="M12 9l-3-3"/></svg>
+              </div>
+              <div class="upcoming-bill-details">
+                <p class="upcoming-bill-name">Natural Gas</p>
+                <p class="upcoming-bill-due">Due: Aug 1</p>
+              </div>
+              <p class="upcoming-bill-amount">$68.32</p>
+            </div>
+            <div class="upcoming-bill-item">
+              <div class="upcoming-bill-icon internet">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div class="upcoming-bill-details">
+                <p class="upcoming-bill-name">FastNet Internet</p>
+                <p class="upcoming-bill-due">Due: Aug 15</p>
+              </div>
+              <p class="upcoming-bill-amount">$59.99</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Stats -->
+        <div class="sidebar-card">
+          <h3>This Month</h3>
+          <div class="payment-stats">
+            <div class="stat-row">
+              <span class="stat-label">Total paid</span>
+              <span class="stat-value">$486.43</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Payments made</span>
+              <span class="stat-value">4</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Payees paid</span>
+              <span class="stat-value">3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Help -->
+        <div class="sidebar-card help-card">
+          <h3>Bill Pay Help</h3>
+          <p class="help-text">Need help setting up bill pay or managing your payments?</p>
+          <div class="help-links">
+            <a href="#" class="help-link">How to add a payee</a>
+            <a href="#" class="help-link">Scheduling payments</a>
+            <a href="#" class="help-link">Payment guarantees</a>
+          </div>
+          <a href="#" class="btn btn-outline btn-block">Contact Support</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" style="padding: 40px 0;">
+  <div class="container footer-bottom" style="border:none; padding:0;">
+    <div class="footer-legal">
+      © 2026 Fieldstone National Bank. Demo website for portfolio purposes only — not a real financial institution. Member FDIC (fictional). Equal Housing Lender.
+      <br><a href="#">Privacy Notice</a> &nbsp;·&nbsp; <a href="#">Online Banking Agreement</a> &nbsp;·&nbsp; <a href="#">Accessibility</a> &nbsp;·&nbsp; <a href="#">Security</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+// Bill Pay page specific JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+  // Tab switching
+  const tabs = document.querySelectorAll('.bill-pay-tab');
+  const tabContents = document.querySelectorAll('.bill-pay-tab-content');
+  
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      const targetTab = this.dataset.tab;
+      
+      // Update active tab
+      tabs.forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+      
+      // Update active content
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.id === targetTab) {
+          content.classList.add('active');
+        }
+      });
+    });
+  });
+  
+  // Payment date options
+  const dateRadios = document.querySelectorAll('input[name="paymentDate"]');
+  const customDateInput = document.getElementById('customPaymentDate');
+  
+  dateRadios.forEach(radio => {
+    radio.addEventListener('change', function() {
+      if (this.value === 'custom') {
+        customDateInput.style.display = 'block';
+      } else {
+        customDateInput.style.display = 'none';
+      }
+    });
+  });
+  
+  // Use bill amount button
+  const useBillAmountBtn = document.querySelector('.use-bill-amount');
+  const paymentAmountInput = document.getElementById('paymentAmount');
+  
+  if (useBillAmountBtn && paymentAmountInput) {
+    useBillAmountBtn.addEventListener('click', function() {
+      paymentAmountInput.value = '127.45';
+    });
+  }
+});
+
+// Dashboard user dropdown functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const userMenuToggle = document.querySelector('.user-menu-toggle');
+  const userDropdown = document.querySelector('.user-dropdown');
+  
+  if (userMenuToggle && userDropdown) {
+    userMenuToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const isOpen = userDropdown.classList.contains('open');
+      
+      if (isOpen) {
+        userDropdown.classList.remove('open');
+        userMenuToggle.setAttribute('aria-expanded', 'false');
+      } else {
+        userDropdown.classList.add('open');
+        userMenuToggle.setAttribute('aria-expanded', 'true');
+      }
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!userDropdown.contains(e.target) && !userMenuToggle.contains(e.target)) {
+        userDropdown.classList.remove('open');
+        userMenuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    
+    // Close dropdown on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && userDropdown.classList.contains('open')) {
+        userDropdown.classList.remove('open');
+        userMenuToggle.setAttribute('aria-expanded', 'false');
+        userMenuToggle.focus();
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

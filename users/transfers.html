@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="#0A2540">
+<title>Transfers | Fieldstone National Bank</title>
+<meta name="description" content="Transfer funds between your Fieldstone accounts, to other banks, or send money to friends and family with Fieldstone National Bank.">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="demo-bar">
+  <strong>Demo site</strong> — for portfolio/demonstration purposes only. This is a simulated banking transfer page.
+</div>
+
+<header class="dashboard-header">
+  <div class="container">
+    <div class="dashboard-nav">
+      <a href="dashboard.html" class="dashboard-brand">
+        <svg class="brand-mark" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M16 2L2 10V13H30V10L16 2Z" fill="#0A2540"/>
+          <rect x="4" y="14" width="3.4" height="13" fill="#0A2540"/>
+          <rect x="10.3" y="14" width="3.4" height="13" fill="#C41230"/>
+          <rect x="16.6" y="14" width="3.4" height="13" fill="#0A2540"/>
+          <rect x="22.9" y="14" width="3.4" height="13" fill="#C41230"/>
+          <rect x="2" y="28" width="28" height="2.4" fill="#0A2540"/>
+        </svg>
+        <span>Fieldstone Online</span>
+      </a>
+
+      <nav class="dashboard-nav-links" aria-label="Dashboard navigation">
+        <a href="dashboard.html" class="dashboard-nav-link">Accounts</a>
+        <a href="transfers.html" class="dashboard-nav-link active">Transfers</a>
+        <a href="bill-pay.html" class="dashboard-nav-link">Bill Pay</a>
+        <a href="deposits.html" class="dashboard-nav-link">Deposits</a>
+      </nav>
+
+      <div class="dashboard-user-menu">
+        <button class="user-menu-toggle" aria-label="User menu" aria-expanded="false">
+          <div class="user-avatar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <span class="user-name">Jordan</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="user-dropdown">
+          <div class="user-dropdown-header">
+            <div class="dropdown-avatar">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="dropdown-user-info">
+              <p class="dropdown-user-name">Jordan Smith</p>
+              <p class="dropdown-user-email">jordan.smith@email.com</p>
+            </div>
+          </div>
+          <div class="user-dropdown-links">
+            <a href="settings.html" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06.06-.06z"/></svg>
+              Settings
+            </a>
+            <a href="#" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Security
+            </a>
+            <a href="#" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Messages
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              Help & Support
+            </a>
+            <a href="index.html" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              Return to Home
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="login.html" class="dropdown-link sign-out">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+              Sign Out
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Transfer Page Header -->
+<div class="transfer-header">
+  <div class="container">
+    <h1>Transfers</h1>
+    <p class="transfer-subtitle">Move money between your accounts, to other banks, or send to friends and family</p>
+  </div>
+</div>
+
+<!-- Transfer Tabs -->
+<div class="transfer-tabs-container">
+  <div class="container">
+    <div class="transfer-tabs" role="tablist">
+      <button class="transfer-tab active" data-tab="between-accounts" role="tab" aria-selected="true">
+        Between Accounts
+      </button>
+      <button class="transfer-tab" data-tab="external-transfer" role="tab" aria-selected="false">
+        External Transfer
+      </button>
+      <button class="transfer-tab" data-tab="person-to-person" role="tab" aria-selected="false">
+        Person-to-Person
+      </button>
+      <button class="transfer-tab" data-tab="international" role="tab" aria-selected="false">
+        International
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Transfer Content -->
+<main class="transfer-main">
+  <div class="container">
+    <div class="transfer-content-grid">
+      
+      <!-- Transfer Form Section -->
+      <div class="transfer-form-section">
+        
+        <!-- Between Accounts Tab -->
+        <div class="transfer-tab-content active" id="between-accounts">
+          <div class="transfer-form-card">
+            <h2>Between Your Accounts</h2>
+            <p class="form-description">Transfer money instantly between your Fieldstone accounts.</p>
+            
+            <form data-demo-form data-success-message="Transfer submitted successfully! This is a demo — no actual transfer was processed." novalidate>
+              <div class="form-feedback" role="status"></div>
+
+              <div class="transfer-account-selector">
+                <label class="field-label">From Account</label>
+                <div class="account-select">
+                  <select id="fromAccount" name="fromAccount" required>
+                    <option value="">Select account</option>
+                    <option value="checking">Everyday Checking •••• 4821 - $4,286.10</option>
+                    <option value="savings">Premium Savings •••• 7734 - $12,847.32</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="transfer-amount-section">
+                <label class="field-label">Amount</label>
+                <div class="amount-input-wrapper">
+                  <span class="currency-symbol">$</span>
+                  <input type="text" id="transferAmount" name="amount" class="amount-input" placeholder="0.00" inputmode="decimal" required>
+                </div>
+                <div class="quick-amount-buttons">
+                  <button type="button" class="quick-amount-btn" data-amount="100">$100</button>
+                  <button type="button" class="quick-amount-btn" data-amount="500">$500</button>
+                  <button type="button" class="quick-amount-btn" data-amount="1000">$1,000</button>
+                  <button type="button" class="quick-amount-btn" data-amount="all">All</button>
+                </div>
+              </div>
+
+              <div class="transfer-account-selector">
+                <label class="field-label">To Account</label>
+                <div class="account-select">
+                  <select id="toAccount" name="toAccount" required>
+                    <option value="">Select account</option>
+                    <option value="checking">Everyday Checking •••• 4821 - $4,286.10</option>
+                    <option value="savings">Premium Savings •••• 7734 - $12,847.32</option>
+                    <option value="credit">Cash Rewards Card •••• 5560 - Balance: $1,247.18</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="transfer-frequency">
+                <label class="field-label">Frequency</label>
+                <div class="frequency-options">
+                  <label class="frequency-option">
+                    <input type="radio" name="frequency" value="once" checked>
+                    <span>One-time transfer</span>
+                  </label>
+                  <label class="frequency-option">
+                    <input type="radio" name="frequency" value="weekly">
+                    <span>Weekly</span>
+                  </label>
+                  <label class="frequency-option">
+                    <input type="radio" name="frequency" value="biweekly">
+                    <span>Every 2 weeks</span>
+                  </label>
+                  <label class="frequency-option">
+                    <input type="radio" name="frequency" value="monthly">
+                    <span>Monthly</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="transfer-date" id="transferDateSection" style="display: none;">
+                <label class="field-label">Start Date</label>
+                <input type="date" id="transferDate" name="transferDate" class="date-input">
+              </div>
+
+              <div class="transfer-memo">
+                <label class="field-label">Memo (Optional)</label>
+                <input type="text" id="transferMemo" name="memo" placeholder="Add a note for your records" maxlength="140">
+              </div>
+
+              <div class="transfer-summary" id="transferSummary" style="display: none;">
+                <h3>Transfer Summary</h3>
+                <div class="summary-row">
+                  <span>From:</span>
+                  <span id="summaryFrom">-</span>
+                </div>
+                <div class="summary-row">
+                  <span>To:</span>
+                  <span id="summaryTo">-</span>
+                </div>
+                <div class="summary-row">
+                  <span>Amount:</span>
+                  <span id="summaryAmount">-</span>
+                </div>
+                <div class="summary-row">
+                  <span>Date:</span>
+                  <span id="summaryDate">-</span>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block transfer-submit">Transfer Now</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- External Transfer Tab -->
+        <div class="transfer-tab-content" id="external-transfer">
+          <div class="transfer-form-card">
+            <h2>External Account Transfer</h2>
+            <p class="form-description">Transfer money to accounts you own at other banks.</p>
+            
+            <form data-demo-form data-success-message="External transfer submitted successfully! This is a demo — no actual transfer was processed." novalidate>
+              <div class="form-feedback" role="status"></div>
+
+              <div class="transfer-account-selector">
+                <label class="field-label">From Account</label>
+                <div class="account-select">
+                  <select id="extFromAccount" name="fromAccount" required>
+                    <option value="">Select account</option>
+                    <option value="checking">Everyday Checking •••• 4821 - $4,286.10</option>
+                    <option value="savings">Premium Savings •••• 7734 - $12,847.32</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="transfer-amount-section">
+                <label class="field-label">Amount</label>
+                <div class="amount-input-wrapper">
+                  <span class="currency-symbol">$</span>
+                  <input type="text" id="extTransferAmount" name="amount" class="amount-input" placeholder="0.00" inputmode="decimal" required>
+                </div>
+              </div>
+
+              <div class="external-account-select">
+                <label class="field-label">To External Account</label>
+                <div class="saved-accounts">
+                  <label class="saved-account-option">
+                    <input type="radio" name="externalAccount" value="chase" checked>
+                    <div class="saved-account-card">
+                      <div class="bank-logo chase">Chase</div>
+                      <div class="account-details">
+                        <p class="bank-name">Chase Bank</p>
+                        <p class="account-number">•••• 6789</p>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="saved-account-option">
+                    <input type="radio" name="externalAccount" value="bofa">
+                    <div class="saved-account-card">
+                      <div class="bank-logo bofa">Bank of America</div>
+                      <div class="account-details">
+                        <p class="bank-name">Bank of America</p>
+                        <p class="account-number">•••• 1234</p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <button type="button" class="btn-text add-account-btn">+ Add new external account</button>
+              </div>
+
+              <div class="transfer-date">
+                <label class="field-label">Transfer Date</label>
+                <input type="date" id="extTransferDate" name="transferDate" class="date-input" required>
+              </div>
+
+              <div class="transfer-memo">
+                <label class="field-label">Memo (Optional)</label>
+                <input type="text" id="extTransferMemo" name="memo" placeholder="Add a note for your records" maxlength="140">
+              </div>
+
+              <div class="transfer-notice">
+                <div class="notice-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                </div>
+                <p>External transfers typically take 1-3 business days to complete.</p>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block transfer-submit">Transfer Now</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Person-to-Person Tab -->
+        <div class="transfer-tab-content" id="person-to-person">
+          <div class="transfer-form-card">
+            <h2>Send Money to Friends & Family</h2>
+            <p class="form-description">Send money instantly using email or mobile number.</p>
+            
+            <form data-demo-form data-success-message="Payment sent successfully! This is a demo — no actual payment was processed." novalidate>
+              <div class="form-feedback" role="status"></div>
+
+              <div class="transfer-account-selector">
+                <label class="field-label">Pay From</label>
+                <div class="account-select">
+                  <select id="p2pFromAccount" name="fromAccount" required>
+                    <option value="">Select account</option>
+                    <option value="checking">Everyday Checking •••• 4821 - $4,286.10</option>
+                    <option value="savings">Premium Savings •••• 7734 - $12,847.32</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="p2p-recipient">
+                <label class="field-label">Send To</label>
+                <div class="recipient-input">
+                  <input type="text" id="p2pRecipient" name="recipient" placeholder="Email or mobile number" required>
+                </div>
+                <div class="recent-recipients">
+                  <p class="recent-label">Recent recipients</p>
+                  <div class="recipient-chips">
+                    <button type="button" class="recipient-chip">mom@email.com</button>
+                    <button type="button" class="recipient-chip">john@work.com</button>
+                    <button type="button" class="recipient-chip">555-123-4567</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="transfer-amount-section">
+                <label class="field-label">Amount</label>
+                <div class="amount-input-wrapper">
+                  <span class="currency-symbol">$</span>
+                  <input type="text" id="p2pAmount" name="amount" class="amount-input" placeholder="0.00" inputmode="decimal" required>
+                </div>
+              </div>
+
+              <div class="transfer-memo">
+                <label class="field-label">What's this for? (Optional)</label>
+                <input type="text" id="p2pMemo" name="memo" placeholder="e.g., Dinner, Rent, Birthday gift" maxlength="140">
+              </div>
+
+              <div class="p2p-security">
+                <label class="checkbox-row">
+                  <input type="checkbox" name="securityQuestion" required>
+                  I confirm that I authorize this payment
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block transfer-submit">Send Money</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- International Tab -->
+        <div class="transfer-tab-content" id="international">
+          <div class="transfer-form-card">
+            <h2>International Wire Transfer</h2>
+            <p class="form-description">Send money to bank accounts outside the United States.</p>
+            
+            <form data-demo-form data-success-message="International transfer submitted successfully! This is a demo — no actual transfer was processed." novalidate>
+              <div class="form-feedback" role="status"></div>
+
+              <div class="transfer-account-selector">
+                <label class="field-label">From Account</label>
+                <div class="account-select">
+                  <select id="intlFromAccount" name="fromAccount" required>
+                    <option value="">Select account</option>
+                    <option value="checking">Everyday Checking •••• 4821 - $4,286.10</option>
+                    <option value="savings">Premium Savings •••• 7734 - $12,847.32</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="transfer-amount-section">
+                <label class="field-label">Amount (USD)</label>
+                <div class="amount-input-wrapper">
+                  <span class="currency-symbol">$</span>
+                  <input type="text" id="intlAmount" name="amount" class="amount-input" placeholder="0.00" inputmode="decimal" required>
+                </div>
+                <div class="exchange-rate-info">
+                  <span class="rate-label">Exchange rate:</span>
+                  <span class="rate-value">1 USD = 0.92 EUR</span>
+                  <a href="#" class="rate-link">View all rates</a>
+                </div>
+              </div>
+
+              <div class="intl-recipient-info">
+                <label class="field-label">Recipient Information</label>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="recipientName">Recipient Name</label>
+                    <input type="text" id="recipientName" name="recipientName" placeholder="Full legal name" required>
+                  </div>
+                  <div class="field">
+                    <label for="recipientBank">Bank Name</label>
+                    <input type="text" id="recipientBank" name="recipientBank" placeholder="Bank name" required>
+                  </div>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="recipientAccount">Account Number / IBAN</label>
+                    <input type="text" id="recipientAccount" name="recipientAccount" placeholder="Account number or IBAN" required>
+                  </div>
+                  <div class="field">
+                    <label for="swiftCode">SWIFT / BIC Code</label>
+                    <input type="text" id="swiftCode" name="swiftCode" placeholder="SWIFT code" required>
+                  </div>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="recipientCountry">Country</label>
+                    <select id="recipientCountry" name="country" required>
+                      <option value="">Select country</option>
+                      <option value="CA">Canada</option>
+                      <option value="UK">United Kingdom</option>
+                      <option value="DE">Germany</option>
+                      <option value="FR">France</option>
+                      <option value="MX">Mexico</option>
+                      <option value="AU">Australia</option>
+                      <option value="JP">Japan</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="recipientAddress">Address</label>
+                    <input type="text" id="recipientAddress" name="address" placeholder="Street address" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="transfer-memo">
+                <label class="field-label">Purpose of Payment</label>
+                <select id="paymentPurpose" name="purpose" required>
+                  <option value="">Select purpose</option>
+                  <option value="family">Family support</option>
+                  <option value="education">Education</option>
+                  <option value="medical">Medical expenses</option>
+                  <option value="gift">Gift</option>
+                  <option value="business">Business payment</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="transfer-notice international-notice">
+                <div class="notice-icon warning">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </div>
+                <p>International wire fee: $25.00. Funds typically arrive in 2-5 business days.</p>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block transfer-submit">Send International Wire</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sidebar -->
+      <div class="transfer-sidebar">
+        
+        <!-- Quick Balance -->
+        <div class="sidebar-card">
+          <h3>Available Balances</h3>
+          <div class="balance-list">
+            <div class="balance-item">
+              <div class="balance-info">
+                <p class="balance-name">Everyday Checking</p>
+                <p class="balance-account">•••• 4821</p>
+              </div>
+              <p class="balance-value">$4,286.10</p>
+            </div>
+            <div class="balance-item">
+              <div class="balance-info">
+                <p class="balance-name">Premium Savings</p>
+                <p class="balance-account">•••• 7734</p>
+              </div>
+              <p class="balance-value">$12,847.32</p>
+            </div>
+            <div class="balance-item">
+              <div class="balance-info">
+                <p class="balance-name">Cash Rewards Card</p>
+                <p class="balance-account">•••• 5560</p>
+              </div>
+              <p class="balance-value negative">$1,247.18</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Transfers -->
+        <div class="sidebar-card">
+          <div class="sidebar-card-header">
+            <h3>Recent Transfers</h3>
+            <a href="#" class="view-all">View All</a>
+          </div>
+          <div class="recent-transfers-list">
+            <div class="transfer-history-item">
+              <div class="transfer-icon transfer-out">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4-4 4"/><path d="M3 12h18"/></svg>
+              </div>
+              <div class="transfer-details">
+                <p class="transfer-name">Transfer to Savings</p>
+                <p class="transfer-date">Jul 8, 2026</p>
+              </div>
+              <p class="transfer-amount">-$200.00</p>
+            </div>
+            <div class="transfer-history-item">
+              <div class="transfer-icon transfer-out">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4-4 4"/><path d="M3 12h18"/></svg>
+              </div>
+              <div class="transfer-details">
+                <p class="transfer-name">External to Chase</p>
+                <p class="transfer-date">Jul 5, 2026</p>
+              </div>
+              <p class="transfer-amount">-$500.00</p>
+            </div>
+            <div class="transfer-history-item">
+              <div class="transfer-icon transfer-in">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16l-4-4 4-4"/><path d="M21 12H3"/></svg>
+              </div>
+              <div class="transfer-details">
+                <p class="transfer-name">From Sarah M.</p>
+                <p class="transfer-date">Jul 3, 2026</p>
+              </div>
+              <p class="transfer-amount positive">+$150.00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transfer Limits -->
+        <div class="sidebar-card">
+          <h3>Transfer Limits</h3>
+          <div class="limits-info">
+            <div class="limit-item">
+              <p class="limit-label">Daily transfer limit</p>
+              <p class="limit-value">$10,000.00</p>
+            </div>
+            <div class="limit-item">
+              <p class="limit-label">Monthly transfer limit</p>
+              <p class="limit-value">$25,000.00</p>
+            </div>
+            <div class="limit-item">
+              <p class="limit-label">Used this month</p>
+              <p class="limit-value">$700.00</p>
+            </div>
+          </div>
+          <a href="#" class="btn-text">Request limit increase</a>
+        </div>
+
+        <!-- Help -->
+        <div class="sidebar-card help-card">
+          <h3>Need Help?</h3>
+          <p class="help-text">Our transfer specialists are available 24/7 to assist you.</p>
+          <a href="#" class="btn btn-outline btn-block">Contact Support</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" style="padding: 40px 0;">
+  <div class="container footer-bottom" style="border:none; padding:0;">
+    <div class="footer-legal">
+      © 2026 Fieldstone National Bank. Demo website for portfolio purposes only — not a real financial institution. Member FDIC (fictional). Equal Housing Lender.
+      <br><a href="#">Privacy Notice</a> &nbsp;·&nbsp; <a href="#">Online Banking Agreement</a> &nbsp;·&nbsp; <a href="#">Accessibility</a> &nbsp;·&nbsp; <a href="#">Security</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+// Transfer page specific JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+  // Tab switching
+  const tabs = document.querySelectorAll('.transfer-tab');
+  const tabContents = document.querySelectorAll('.transfer-tab-content');
+  
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      const targetTab = this.dataset.tab;
+      
+      // Update active tab
+      tabs.forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+      
+      // Update active content
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.id === targetTab) {
+          content.classList.add('active');
+        }
+      });
+    });
+  });
+  
+  // Quick amount buttons
+  const quickAmountBtns = document.querySelectorAll('.quick-amount-btn');
+  const amountInput = document.getElementById('transferAmount');
+  
+  quickAmountBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const amount = this.dataset.amount;
+      if (amount === 'all') {
+        // Simulate getting all available balance
+        amountInput.value = '4286.10';
+      } else {
+        amountInput.value = amount;
+      }
+    });
+  });
+  
+  // Recipient chips
+  const recipientChips = document.querySelectorAll('.recipient-chip');
+  const recipientInput = document.getElementById('p2pRecipient');
+  
+  recipientChips.forEach(chip => {
+    chip.addEventListener('click', function() {
+      recipientInput.value = this.textContent;
+    });
+  });
+  
+  // Frequency toggle for date field
+  const frequencyRadios = document.querySelectorAll('input[name="frequency"]');
+  const transferDateSection = document.getElementById('transferDateSection');
+  
+  frequencyRadios.forEach(radio => {
+    radio.addEventListener('change', function() {
+      if (this.value !== 'once') {
+        transferDateSection.style.display = 'block';
+      } else {
+        transferDateSection.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Dashboard user dropdown functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const userMenuToggle = document.querySelector('.user-menu-toggle');
+  const userDropdown = document.querySelector('.user-dropdown');
+  
+  if (userMenuToggle && userDropdown) {
+    userMenuToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const isOpen = userDropdown.classList.contains('open');
+      
+      if (isOpen) {
+        userDropdown.classList.remove('open');
+        userMenuToggle.setAttribute('aria-expanded', 'false');
+      } else {
+        userDropdown.classList.add('open');
+        userMenuToggle.setAttribute('aria-expanded', 'true');
+      }
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!userDropdown.contains(e.target) && !userMenuToggle.contains(e.target)) {
+        userDropdown.classList.remove('open');
+        userMenuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    
+    // Close dropdown on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && userDropdown.classList.contains('open')) {
+        userDropdown.classList.remove('open');
+        userMenuToggle.setAttribute('aria-expanded', 'false');
+        userMenuToggle.focus();
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

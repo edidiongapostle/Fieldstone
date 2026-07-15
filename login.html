@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="#0A2540">
+<title>Sign In | Fieldstone National Bank</title>
+<meta name="description" content="Sign in to your Fieldstone National Bank accounts securely.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="demo-bar">
+  <strong>Demo site</strong> — for portfolio/demonstration purposes only. Please don't enter real personal or account information.
+</div>
+
+<header class="site-header">
+  <div class="utility-bar">
+    <div class="container">
+      <a href="about.html">About Us</a>
+      <a href="#locations">Find a Branch / ATM</a>
+      <a href="#support">Support</a>
+      <a href="#espanol">Español</a>
+    </div>
+  </div>
+  <nav class="nav-main container" aria-label="Primary">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M16 2L2 10V13H30V10L16 2Z" fill="#0A2540"/>
+        <rect x="4" y="14" width="3.4" height="13" fill="#0A2540"/>
+        <rect x="10.3" y="14" width="3.4" height="13" fill="#C41230"/>
+        <rect x="16.6" y="14" width="3.4" height="13" fill="#0A2540"/>
+        <rect x="22.9" y="14" width="3.4" height="13" fill="#C41230"/>
+        <rect x="2" y="28" width="28" height="2.4" fill="#0A2540"/>
+      </svg>
+      <span>Fieldstone<small>National Bank &nbsp;•&nbsp; Member FDIC</small></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Personal</a></li>
+      <li><a href="index.html#products">Small Business</a></li>
+      <li><a href="index.html#security">Wealth Management</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="create-account.html" class="btn btn-outline btn-sm">Open an Account</a>
+      <a href="login.html" class="btn btn-secondary btn-sm">Sign In</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav container">
+    <a href="index.html">Personal</a>
+    <a href="index.html#products">Small Business</a>
+    <a href="index.html#security">Wealth Management</a>
+    <a href="about.html">About</a>
+    <a href="create-account.html" class="btn btn-outline btn-sm">Open an Account</a>
+  </div>
+</header>
+
+<div class="auth-shell">
+  <aside class="auth-aside">
+    <svg class="hero-pillars" viewBox="0 0 500 600" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.5">
+        <line x1="20" y1="120" x2="20" y2="600"/>
+        <line x1="80" y1="90" x2="80" y2="600"/>
+        <line x1="140" y1="150" x2="140" y2="600"/>
+        <line x1="200" y1="70" x2="200" y2="600"/>
+        <line x1="260" y1="160" x2="260" y2="600"/>
+        <line x1="320" y1="100" x2="320" y2="600"/>
+        <line x1="380" y1="130" x2="380" y2="600"/>
+        <line x1="440" y1="60" x2="440" y2="600"/>
+        <line x1="0" y1="200" x2="500" y2="200"/>
+      </g>
+    </svg>
+    <div class="auth-aside-content">
+      <h2>Welcome back.</h2>
+      <p>Sign in to check balances, move money, and manage your cards — all in one place.</p>
+      <ul class="auth-aside-list">
+        <li><span class="dot">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+        </span> All your accounts, together in one view</li>
+        <li><span class="dot">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+        </span> Send person-to-person transfers in seconds</li>
+        <li><span class="dot">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+        </span> Lock a lost card instantly from your phone</li>
+        <li><span class="dot">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+        </span> Bank-level encryption on every session</li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="auth-main">
+    <div class="auth-box">
+      <h1>Sign In</h1>
+      <p class="sub">Enter your Online ID and passcode to access your accounts.</p>
+
+      <form data-demo-form data-success-message="This is a demo — no real sign-in occurs and nothing is stored." data-success-redirect="users/dashboard.html" novalidate>
+        <div class="form-feedback" role="status"></div>
+
+        <div class="field">
+          <label for="loginOnlineId">Online ID</label>
+          <input type="text" id="loginOnlineId" name="onlineId" autocomplete="username" placeholder="Enter your Online ID" required>
+        </div>
+
+        <div class="field">
+          <label for="loginPasscode">Passcode</label>
+          <div class="input-wrap">
+            <input type="password" id="loginPasscode" name="passcode" autocomplete="current-password" placeholder="Enter your passcode" required>
+            <button type="button" class="pw-toggle" data-target="loginPasscode" aria-label="Show password">Show</button>
+          </div>
+        </div>
+
+        <label class="checkbox-row">
+          <input type="checkbox" name="remember">
+          Remember this device for 30 days
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top:20px;">Sign In</button>
+
+        <div class="form-links" id="help">
+          <a href="#">Forgot Online ID?</a>
+          <a href="#">Forgot Passcode?</a>
+        </div>
+      </form>
+
+      <div class="divider-or">or</div>
+
+      <div id="enroll" style="text-align:center;">
+        <p style="margin-bottom:14px;">New to Fieldstone Online Banking?</p>
+        <a href="create-account.html" class="btn btn-outline btn-block">Open an Account</a>
+      </div>
+
+      <div class="inline-note">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+        We'll never call, text, or email asking for your full passcode. If someone does, it's not us — please report it.
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer class="site-footer" style="padding:26px 0;">
+  <div class="container footer-bottom" style="border:none; padding:0;">
+    <div class="footer-legal">
+      © 2026 Fieldstone National Bank. Demo website for portfolio purposes only — not a real financial institution. Member FDIC (fictional). Equal Housing Lender.
+    </div>
+    <div class="footer-badges">
+      <span class="badge-pill">Member FDIC</span>
+      <span class="badge-pill">Equal Housing Lender</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

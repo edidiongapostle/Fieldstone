@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="#0A2540">
+<title>Account Summary | Fieldstone National Bank</title>
+<meta name="description" content="View your accounts, balances, and recent transactions with Fieldstone National Bank Online Banking.">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="demo-bar">
+  <strong>Demo site</strong> — for portfolio/demonstration purposes only. This is a simulated banking dashboard.
+</div>
+
+<header class="dashboard-header">
+  <div class="container">
+    <div class="dashboard-nav">
+      <a href="dashboard.html" class="dashboard-brand">
+        <svg class="brand-mark" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M16 2L2 10V13H30V10L16 2Z" fill="#0A2540"/>
+          <rect x="4" y="14" width="3.4" height="13" fill="#0A2540"/>
+          <rect x="10.3" y="14" width="3.4" height="13" fill="#C41230"/>
+          <rect x="16.6" y="14" width="3.4" height="13" fill="#0A2540"/>
+          <rect x="22.9" y="14" width="3.4" height="13" fill="#C41230"/>
+          <rect x="2" y="28" width="28" height="2.4" fill="#0A2540"/>
+        </svg>
+        <span>Fieldstone Online</span>
+      </a>
+
+      <nav class="dashboard-nav-links" aria-label="Dashboard navigation">
+        <a href="dashboard.html" class="dashboard-nav-link active">Accounts</a>
+        <a href="transfers.html" class="dashboard-nav-link">Transfers</a>
+        <a href="bill-pay.html" class="dashboard-nav-link">Bill Pay</a>
+        <a href="deposits.html" class="dashboard-nav-link">Deposits</a>
+      </nav>
+
+      <div class="dashboard-user-menu">
+        <button class="user-menu-toggle" aria-label="User menu" aria-expanded="false">
+          <div class="user-avatar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <span class="user-name">Jordan</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="user-dropdown">
+          <div class="user-dropdown-header">
+            <div class="dropdown-avatar">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="dropdown-user-info">
+              <p class="dropdown-user-name">Jordan Smith</p>
+              <p class="dropdown-user-email">jordan.smith@email.com</p>
+            </div>
+          </div>
+          <div class="user-dropdown-links">
+            <a href="settings.html" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06.06-.06z"/></svg>
+              Settings
+            </a>
+            <a href="#" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Security
+            </a>
+            <a href="#" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Messages
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              Help & Support
+            </a>
+            <a href="../index.html" class="dropdown-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              Return to Home
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="../login.html" class="dropdown-link sign-out">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+              Sign Out
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Dashboard Welcome Bar -->
+<div class="dashboard-welcome">
+  <div class="container">
+    <div class="welcome-content">
+      <div>
+        <p class="welcome-greeting">Good morning, Jordan</p>
+        <h1 class="welcome-title">Your Accounts</h1>
+      </div>
+      <div class="welcome-actions">
+        <a href="transfers.html" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4-4 4"/><path d="M3 12h18"/></svg>
+          Transfer Funds
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Dashboard Content -->
+<main class="dashboard-main">
+  <div class="container">
+    <div class="dashboard-grid">
+      
+      <!-- Accounts Section -->
+      <div class="accounts-section">
+        <div class="section-header">
+          <h2>Account Summary</h2>
+          <div class="section-actions">
+            <button class="btn-text" id="hideBalancesBtn">Hide Balances</button>
+            <button class="btn-text" id="customizeBtn">Customize</button>
+          </div>
+        </div>
+
+        <!-- Account Cards -->
+        <div class="account-cards">
+          
+          <!-- Checking Account -->
+          <div class="account-card checking" data-account="checking">
+            <div class="account-card-header">
+              <div class="account-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+              </div>
+              <div class="account-info">
+                <h3>Everyday Checking</h3>
+                <p class="account-number">•••• •••• •••• 4821</p>
+              </div>
+              <div class="account-balance">
+                <p class="balance-label">Available Balance</p>
+                <p class="balance-amount balance-value">$4,286.10</p>
+                <p class="balance-status">Available now</p>
+              </div>
+            </div>
+            <div class="account-card-footer">
+              <a href="account-details.html" class="account-link">View Details</a>
+              <a href="transfers.html" class="account-link">Transfer</a>
+              <a href="statements.html" class="account-link">Statements</a>
+            </div>
+          </div>
+
+          <!-- Savings Account -->
+          <div class="account-card savings" data-account="savings">
+            <div class="account-card-header">
+              <div class="account-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12V8a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4"/><path d="M12 12a5 5 0 0 0 10 0 5 5 0 0 0-10 0z"/></svg>
+              </div>
+              <div class="account-info">
+                <h3>Premium Savings</h3>
+                <p class="account-number">•••• •••• •••• 7734</p>
+              </div>
+              <div class="account-balance">
+                <p class="balance-label">Available Balance</p>
+                <p class="balance-amount balance-value">$12,847.32</p>
+                <p class="balance-status">Available now</p>
+              </div>
+            </div>
+            <div class="account-card-footer">
+              <a href="account-details.html" class="account-link">View Details</a>
+              <a href="transfers.html" class="account-link">Transfer</a>
+              <a href="statements.html" class="account-link">Statements</a>
+            </div>
+          </div>
+
+          <!-- Credit Card -->
+          <div class="account-card credit" data-account="credit">
+            <div class="account-card-header">
+              <div class="account-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="14" rx="2"/><line x1="2" y1="11" x2="22" y2="11"/><line x1="6" y1="15.5" x2="10" y2="15.5"/></svg>
+              </div>
+              <div class="account-info">
+                <h3>Cash Rewards Card</h3>
+                <p class="account-number">•••• •••• •••• 5560</p>
+              </div>
+              <div class="account-balance">
+                <p class="balance-label">Current Balance</p>
+                <p class="balance-amount negative balance-value">-$1,247.18</p>
+                <p class="balance-status">Payment due: Jul 28</p>
+              </div>
+            </div>
+            <div class="account-card-footer">
+              <a href="account-details.html" class="account-link">View Details</a>
+              <a href="transfers.html" class="account-link">Pay Now</a>
+              <a href="statements.html" class="account-link">Statements</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Net Worth Summary -->
+        <div class="net-worth-card">
+          <div class="net-worth-header">
+            <h3>Net Worth Summary</h3>
+            <span class="net-worth-date">As of July 15, 2026</span>
+          </div>
+          <div class="net-worth-grid">
+            <div class="net-worth-item">
+              <p class="nw-label">Total Assets</p>
+              <p class="nw-value positive">+$17,133.42</p>
+            </div>
+            <div class="net-worth-item">
+              <p class="nw-label">Total Liabilities</p>
+              <p class="nw-value negative">-$1,247.18</p>
+            </div>
+            <div class="net-worth-item total">
+              <p class="nw-label">Net Worth</p>
+              <p class="nw-value">$15,886.24</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="dashboard-sidebar">
+        
+        <!-- Quick Actions -->
+        <div class="sidebar-card">
+          <h3>Quick Actions</h3>
+          <div class="quick-actions-grid">
+            <a href="transfers.html" class="quick-action">
+              <div class="quick-action-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4-4 4"/><path d="M3 12h18"/></svg>
+              </div>
+              <span>Transfer</span>
+            </a>
+            <a href="bill-pay.html" class="quick-action">
+              <div class="quick-action-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <span>Bill Pay</span>
+            </a>
+            <a href="#" class="quick-action">
+              <div class="quick-action-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <span>Statements</span>
+            </a>
+            <a href="#" class="quick-action">
+              <div class="quick-action-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <span>Messages</span>
+            </a>
+            <a href="deposits.html" class="quick-action">
+              <div class="quick-action-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <span>Deposits</span>
+            </a>
+            <a href="settings.html" class="quick-action">
+              <div class="quick-action-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06.06-.06z"/></svg>
+              </div>
+              <span>Settings</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="sidebar-card">
+          <div class="sidebar-card-header">
+            <h3>Recent Activity</h3>
+            <a href="#" class="view-all">View All</a>
+          </div>
+          <div class="recent-activity-list">
+            <div class="activity-item">
+              <div class="activity-icon activity-debit">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <div class="activity-details">
+                <p class="activity-name">Trader Joe's</p>
+                <p class="activity-date">Jul 14, 2026</p>
+              </div>
+              <p class="activity-amount negative">-$42.18</p>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon activity-deposit">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+              </div>
+              <div class="activity-details">
+                <p class="activity-name">Direct Deposit - Payroll</p>
+                <p class="activity-date">Jul 12, 2026</p>
+              </div>
+              <p class="activity-amount positive">+$2,140.00</p>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon activity-debit">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <div class="activity-details">
+                <p class="activity-name">Fieldstone Auto Loan</p>
+                <p class="activity-date">Jul 10, 2026</p>
+              </div>
+              <p class="activity-amount negative">-$318.42</p>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon activity-transfer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4-4 4"/><path d="M3 12h18"/></svg>
+              </div>
+              <div class="activity-details">
+                <p class="activity-name">Transfer to Savings</p>
+                <p class="activity-date">Jul 8, 2026</p>
+              </div>
+              <p class="activity-amount negative">-$200.00</p>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon activity-debit">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <div class="activity-details">
+                <p class="activity-name">Shell Gas Station</p>
+                <p class="activity-date">Jul 7, 2026</p>
+              </div>
+              <p class="activity-amount negative">-$58.32</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alerts -->
+        <div class="sidebar-card alerts-card">
+          <div class="sidebar-card-header">
+            <h3>Alerts</h3>
+            <span class="alert-count">3</span>
+          </div>
+          <div class="alerts-list">
+            <div class="alert-item alert-info">
+              <div class="alert-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              </div>
+              <p>Your July statement is now available</p>
+            </div>
+            <div class="alert-item alert-warning">
+              <div class="alert-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              </div>
+              <p>Credit card payment due in 13 days</p>
+            </div>
+            <div class="alert-item alert-success">
+              <div class="alert-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <p>Savings goal reached: Emergency Fund</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" style="padding: 40px 0;">
+  <div class="container footer-bottom" style="border:none; padding:0;">
+    <div class="footer-legal">
+      © 2026 Fieldstone National Bank. Demo website for portfolio purposes only — not a real financial institution. Member FDIC (fictional). Equal Housing Lender.
+      <br><a href="#">Privacy Notice</a> &nbsp;·&nbsp; <a href="#">Online Banking Agreement</a> &nbsp;·&nbsp; <a href="#">Accessibility</a> &nbsp;·&nbsp; <a href="#">Security</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+// Dashboard user dropdown functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const userMenuToggle = document.querySelector('.user-menu-toggle');
+  const userDropdown = document.querySelector('.user-dropdown');
+  
+  if (userMenuToggle && userDropdown) {
+    userMenuToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const isOpen = userDropdown.classList.contains('open');
+      
+      if (isOpen) {
+        userDropdown.classList.remove('open');
+        userMenuToggle.setAttribute('aria-expanded', 'false');
+      } else {
+        userDropdown.classList.add('open');
+        userMenuToggle.setAttribute('aria-expanded', 'true');
+      }
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!userDropdown.contains(e.target) && !userMenuToggle.contains(e.target)) {
+        userDropdown.classList.remove('open');
+        userMenuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    
+    // Close dropdown on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && userDropdown.classList.contains('open')) {
+        userDropdown.classList.remove('open');
+        userMenuToggle.setAttribute('aria-expanded', 'false');
+        userMenuToggle.focus();
+      }
+    });
+  }
+  
+  // Hide/Show balances functionality
+  const hideBalancesBtn = document.getElementById('hideBalancesBtn');
+  const balanceValues = document.querySelectorAll('.balance-value');
+  let balancesHidden = false;
+  
+  if (hideBalancesBtn && balanceValues.length > 0) {
+    hideBalancesBtn.addEventListener('click', function() {
+      balancesHidden = !balancesHidden;
+      
+      balanceValues.forEach(balance => {
+        if (balancesHidden) {
+          balance.textContent = '••••••';
+          balance.classList.add('hidden');
+        } else {
+          // Restore original values
+          const accountCard = balance.closest('.account-card');
+          if (accountCard.classList.contains('checking')) {
+            balance.textContent = '$4,286.10';
+          } else if (accountCard.classList.contains('savings')) {
+            balance.textContent = '$12,847.32';
+          } else if (accountCard.classList.contains('credit')) {
+            balance.textContent = '-$1,247.18';
+          }
+          balance.classList.remove('hidden');
+        }
+      });
+      
+      hideBalancesBtn.textContent = balancesHidden ? 'Show Balances' : 'Hide Balances';
+    });
+  }
+  
+  // Customize accounts functionality
+  const customizeBtn = document.getElementById('customizeBtn');
+  const accountCards = document.querySelectorAll('.account-card');
+  
+  if (customizeBtn && accountCards.length > 0) {
+    customizeBtn.addEventListener('click', function() {
+      // Toggle edit mode on account cards
+      accountCards.forEach(card => {
+        const isHidden = card.style.display === 'none';
+        
+        if (isHidden) {
+          card.style.display = '';
+        } else {
+          // Add a close button to each card if not present
+          if (!card.querySelector('.account-close-btn')) {
+            const closeBtn = document.createElement('button');
+            closeBtn.className = 'account-close-btn';
+            closeBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
+            closeBtn.title = 'Hide this account';
+            closeBtn.addEventListener('click', function(e) {
+              e.stopPropagation();
+              card.style.display = 'none';
+            });
+            
+            card.querySelector('.account-card-header').appendChild(closeBtn);
+          }
+        }
+      });
+      
+      // Show a simple alert for demo purposes
+      if (!document.querySelector('.account-close-btn')) {
+        alert('Customize mode: Click the X on any account card to hide it from your dashboard. Click Customize again to show hidden accounts.');
+      } else {
+        // Remove close buttons and show all accounts
+        accountCards.forEach(card => {
+          const closeBtn = card.querySelector('.account-close-btn');
+          if (closeBtn) {
+            closeBtn.remove();
+          }
+          card.style.display = '';
+        });
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>
